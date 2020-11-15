@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test | tool.js / animation.js</title>
+    <script src="../../dist/tool.js"></script>
+</head>
+
+<body>
+
+    <ul>
+        <li onclick='stop(0)'>动画1</li>
+        <li onclick='stop(1)'>动画2</li>
+        <li onclick='stop(2)'>动画3</li>
+    </ul>
+
+    <script>
+
+        var lis = document.getElementsByTagName('li');
+        var colors = ['red', 'blue', 'green'];
+        var animations = [];
+
+        for (var i = 0; i < lis.length; i++) {
+            (function (i) {
+                animations[i] = tool.animation(function (deep) {
+                    lis[i].style.borderLeft = (500 * deep) + "px solid " + colors[i];
+                }, 3000 * (i + 1), function (deep) {
+                    console.log('结束了：' + i + ",deep=" + deep);
+                });
+            })(i);
+        }
+
+        // 中途停止
+        function stop(i) {
+            animations[i]();
+        }
+
+    </script>
+
+</body>
+
+</html>
