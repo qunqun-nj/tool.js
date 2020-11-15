@@ -1,4 +1,4 @@
-# 🧰 tool.js - 前端常用的工具类方法汇总。
+# 🧰 tool.js - 前端常用的工具类方法汇总
 
 <p>
   <a href="https://yelloxing.gitee.io/npm-downloads?interval=7&packages=@hai2007/tool"><img src="https://img.shields.io/npm/dm/@hai2007/tool.svg" alt="downloads"></a>
@@ -35,6 +35,14 @@ import Matrix4 from '@hai2007/tool/Matrix4.js';
 ```
 
 [<< 查看文档](./apis/Matrix4.md)
+
+- Hermite三次插值
+
+```js
+import Hermite from '@hai2007/tool/Hermite.js';
+```
+
+[<< 查看文档](./apis/Hermite.md)
 
 ## 联系我们
 
