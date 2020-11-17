@@ -1,11 +1,11 @@
 {
   "name": "@hai2007/tool",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "🧰 前端常用的工具类方法汇总。",
   "main": "./dist/tool.min.js",
   "scripts": {
     "start": "npm install && npm run build",
-    "build": "npm run rollup && npm run uglifyjs",
+    "build": "npm run rollup && npm run uglifyjs && cuf --config ./cuf.config.js",
     "rollup": "rollup --config rollup.config.js",
     "uglifyjs": "uglifyjs ./dist/tool.js -m -o ./dist/tool.min.js"
   },

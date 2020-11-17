@@ -1,3 +1,16 @@
+/*!
+ * tool.js - 🧰 前端常用的工具类方法汇总。
+ * git+https://github.com/hai2007/tool.js.git
+ *
+ * author hai2007
+ *
+ * version 0.2.1
+ *
+ * Copyright (c) 2020 hai2007 走一步，再走一步。
+ * Released under the MIT license
+ *
+ * Date:Tue Nov 17 2020 19:55:12 GMT+0800 (GMT+08:00)
+ */
 (function () {
   'use strict';
 
