@@ -1,15 +1,15 @@
 /*!
- * tool.js - 🧰 前端常用的工具类方法汇总。
+ * 💡 tool.js - 💡 前端常用的工具类方法汇总。
  * git+https://github.com/hai2007/tool.js.git
  *
- * author hai2007
+ * author hai2007 < https://hai2007.gitee.io/sweethome >
  *
- * version 0.2.1
+ * version 0.3.0
  *
- * Copyright (c) 2020 hai2007 走一步，再走一步。
+ * Copyright (c) 2020-present hai2007 走一步，再走一步。
  * Released under the MIT license
  *
- * Date:Tue Nov 17 2020 19:55:12 GMT+0800 (GMT+08:00)
+ * Date:Wed Nov 18 2020 16:54:37 GMT+0800 (GMT+08:00)
  */
 (function () {
   'use strict';
@@ -37,7 +37,16 @@
 
   var $speeds = 400; //定时器ID
 
-  var $timerId = null; // 动画轮播
+  var $timerId = null;
+  /*!
+   * 💡 - 动画轮播
+   * https://github.com/hai2007/tool.js/blob/master/animation.js
+   *
+   * author hai2007 < https://hai2007.gitee.io/sweethome >
+   *
+   * Copyright (c) 2020-present hai2007 走一步，再走一步。
+   * Released under the MIT license
+   */
 
   /**
    * @param {function} doback 轮询函数，有一个形参deep，0-1，表示执行进度
@@ -222,6 +231,15 @@
 
     return newParam;
   };
+  /*!
+   * 💡 - 列主序存储的4x4矩阵
+   * https://github.com/hai2007/tool.js/blob/master/Matrix4.js
+   *
+   * author hai2007 < https://hai2007.gitee.io/sweethome >
+   *
+   * Copyright (c) 2020-present hai2007 走一步，再走一步。
+   * Released under the MIT license
+   */
 
   function Matrix4 (initMatrix4) {
     var matrix4 = initMatrix4 || [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1];
@@ -291,6 +309,16 @@
     return init;
   }
 
+  /*!
+   * 💡 - Hermite三次插值
+   * https://github.com/hai2007/tool.js/blob/master/Hermite.js
+   *
+   * author hai2007 < https://hai2007.gitee.io/sweethome >
+   *
+   * Copyright (c) 2020-present hai2007 走一步，再走一步。
+   * Released under the MIT license
+   */
+
   function Hermite (config) {
     config = initConfig({
       // 张弛系数
@@ -346,10 +374,234 @@
     return hermite;
   }
 
+  /**
+   * 判断一个值是不是Object。
+   *
+   * @param {*} value 需要判断类型的值
+   * @returns {boolean} 如果是Object返回true，否则返回false
+   */
+  function isObject (value) {
+    var type = _typeof(value);
+
+    return value != null && (type === 'object' || type === 'function');
+  }
+
+  var toString = Object.prototype.toString;
+  /**
+   * 获取一个值的类型字符串[object type]
+   *
+   * @param {*} value 需要返回类型的值
+   * @returns {string} 返回类型字符串
+   */
+
+  function getType (value) {
+    if (value == null) {
+      return value === undefined ? '[object Undefined]' : '[object Null]';
+    }
+
+    return toString.call(value);
+  }
+
+  /**
+   * 判断一个值是不是Boolean。
+   *
+   * @param {*} value 需要判断类型的值
+   * @returns {boolean} 如果是Boolean返回true，否则返回false
+   */
+
+  function _isBoolean (value) {
+    return value === true || value === false || value !== null && _typeof(value) === 'object' && getType(value) === '[object Boolean]';
+  }
+
+  /**
+   * 判断一个值是不是number。
+   *
+   * @param {*} value 需要判断类型的值
+   * @returns {boolean} 如果是number返回true，否则返回false
+   */
+
+  function _isNumber (value) {
+    return typeof value === 'number' || value !== null && _typeof(value) === 'object' && getType(value) === '[object Number]';
+  }
+
+  /**
+   * 判断一个值是不是String。
+   *
+   * @param {*} value 需要判断类型的值
+   * @returns {boolean} 如果是String返回true，否则返回false
+   */
+
+  function _isString (value) {
+    var type = _typeof(value);
+
+    return type === 'string' || type === 'object' && value != null && !Array.isArray(value) && getType(value) === '[object String]';
+  }
+
+  /**
+   * 判断一个值是不是symbol。
+   *
+   * @param {*} value 需要判断类型的值
+   * @returns {boolean} 如果是symbol返回true，否则返回false
+   */
+
+  function _isSymbol (value) {
+    var type = _typeof(value);
+
+    return type === 'symbol' || type === 'object' && value !== null && getType(value) === '[object Symbol]';
+  }
+
+  /**
+   * 判断一个值是不是Function。
+   *
+   * @param {*} value 需要判断类型的值
+   * @returns {boolean} 如果是Function返回true，否则返回false
+   */
+
+  function _isFunction (value) {
+    if (!isObject(value)) {
+      return false;
+    }
+
+    var type = getType(value);
+    return type === '[object Function]' || type === '[object AsyncFunction]' || type === '[object GeneratorFunction]' || type === '[object Proxy]';
+  }
+
+  /**
+   * 判断一个值是不是一个朴素的'对象'
+   * 所谓"纯粹的对象"，就是该对象是通过"{}"或"new Object"创建的
+   *
+   * @param {*} value 需要判断类型的值
+   * @returns {boolean} 如果是朴素的'对象'返回true，否则返回false
+   */
+
+  function _isPlainObject (value) {
+    if (value === null || _typeof(value) !== 'object' || getType(value) != '[object Object]') {
+      return false;
+    } // 如果原型为null
+
+
+    if (Object.getPrototypeOf(value) === null) {
+      return true;
+    }
+
+    var proto = value;
+
+    while (Object.getPrototypeOf(proto) !== null) {
+      proto = Object.getPrototypeOf(proto);
+    }
+
+    return Object.getPrototypeOf(value) === proto;
+  }
+
+  /**
+   * 判断一个值是不是错误对象。
+   * `Error`, `EvalError`, `RangeError`, `ReferenceError`,`SyntaxError`, `TypeError`, or `URIError`
+   *
+   * @param {*} value 需要判断类型的值
+   * @returns {boolean} 如果是错误对象返回true，否则返回false
+   */
+
+  function _isError (value) {
+    if (value === null || _typeof(value) !== 'object') {
+      return false;
+    }
+
+    var type = getType(value);
+    return type === '[object Error]' || type === '[object DOMException]' || typeof value.message === 'string' && typeof value.name === 'string' && !_isPlainObject(value);
+  }
+
+  /**
+   * [
+   *  种类：Basic|Object
+   *  类型:
+   *      // 基本数据类型
+   *      Undefined|Null|Boolean|Number|String|Symbol
+   *
+   *      // 引用类型
+   *      Function|Array|Error|Plain
+   *
+   *      // 结点类型
+   *      Element|Attribute|Text|Comment
+   *
+   *      // 未识别类型(这种类型请不要使用，这是为了未来扩展类型的时候使用的)
+   *      *
+   * ]
+   */
+
+  function getType$1 (input) {
+    // 首先，判断是不是对象（朴素对象plain也是对象），具体类型设置为，未定义
+    var result = [isObject(input) ? "Object" : "Basic", "*"]; // 基本类型
+
+    if (input === undefined) result[1] = 'Undefined';else if (input === null) result[1] = 'Null';else if (_isBoolean(input)) result[1] = 'Boolean';else if (_isNumber(input)) result[1] = 'Number';else if (_isString(input)) result[1] = 'String';else if (_isSymbol(input)) result[1] = 'Symbol'; // 引用类型
+    else if (_isFunction(input)) result[1] = 'Function';else if (Array.isArray(input)) result[1] = 'Array'; // 一个类似数组的类型没有被统计进来
+      else if (_isError(input)) result[1] = 'Error';else if (_isPlainObject(input)) result[1] = 'Plain';else {
+          if (_typeof(input) === 'object') {
+            // 结点类型
+            // 这首先不能是一个Plain或null，需要特别注意一下
+            if (input.nodeType === 3) result[1] = 'Text'; // 文本
+            else if (input.nodeType === 1 || input.nodeType === 9 || input.nodeType === 11) result[1] = 'Element'; // 结点
+              else if (input.nodeType === 2) result[1] = 'Attribute'; // 属性
+                else if (input.nodeType === 8) result[1] = 'Comment'; // 注释
+          }
+        }
+    return result;
+  }
+
+  var domTypeHelp = function domTypeHelp(types, value) {
+    return value !== null && _typeof(value) === 'object' && types.indexOf(value.nodeType) > -1 && !_isPlainObject(value);
+  };
+
+  var isUndefined = function isUndefined(input) {
+    return input === undefined;
+  };
+  var isNull = function isNull(input) {
+    return input === null;
+  };
+  var isBoolean = _isBoolean;
+  var isNumber = _isNumber;
+  var isString = _isString;
+  var isSymbol = _isSymbol; // 引用类型
+
+  var isFunction = _isFunction;
+  var isArray = function isArray(input) {
+    return Array.isArray(input);
+  };
+  var isError = _isError;
+  var isPlainObject = _isPlainObject; // 结点类型
+
+  var isElement = function isElement(input) {
+    return domTypeHelp([1, 9, 11], input);
+  };
+  var isAttribute = function isAttribute(input) {
+    return domTypeHelp([2], input);
+  };
+  var isText = function isText(input) {
+    return domTypeHelp([3], input);
+  };
+  var isComment = function isComment(input) {
+    return domTypeHelp([8], input);
+  };
+
   var tool = {
     animation: animation,
     Matrix4: Matrix4,
-    Hermite: Hermite
+    Hermite: Hermite,
+    getType: getType$1,
+    // 类型判断
+    isUndefined: isUndefined,
+    isNull: isNull,
+    isBoolean: isBoolean,
+    isNumber: isNumber,
+    isString: isString,
+    isSymbol: isSymbol,
+    isFunction: isFunction,
+    isArray: isArray,
+    isError: isError,
+    isPlainObject: isPlainObject,
+    isElement: isElement,
+    isAttribute: isAttribute,
+    isText: isText,
+    isComment: isComment
   };
 
   if ((typeof module === "undefined" ? "undefined" : _typeof(module)) === "object" && _typeof(module.exports) === "object") {

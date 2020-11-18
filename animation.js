@@ -7,7 +7,15 @@ let $speeds = 400;
 //定时器ID
 let $timerId = null;
 
-// 动画轮播
+/*!
+ * 💡 - 动画轮播
+ * https://github.com/hai2007/tool.js/blob/master/animation.js
+ *
+ * author hai2007 < https://hai2007.gitee.io/sweethome >
+ *
+ * Copyright (c) 2020-present hai2007 走一步，再走一步。
+ * Released under the MIT license
+ */
 
 /**
  * @param {function} doback 轮询函数，有一个形参deep，0-1，表示执行进度

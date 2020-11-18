@@ -12,12 +12,21 @@ let _multiply = function (matrix4, param) {
     return newParam;
 };
 
-import _move from './.inner/move';
-import _rotate from './.inner/rotate';
-import _scale from './.inner/scale';
-import _transform from './.inner/transform';
+import _move from './.inner/transform/move';
+import _rotate from './.inner/transform/rotate';
+import _scale from './.inner/transform/scale';
+import _transform from './.inner/transform/transform';
 
-// 列主序存储的4x4矩阵
+/*!
+ * 💡 - 列主序存储的4x4矩阵
+ * https://github.com/hai2007/tool.js/blob/master/Matrix4.js
+ *
+ * author hai2007 < https://hai2007.gitee.io/sweethome >
+ *
+ * Copyright (c) 2020-present hai2007 走一步，再走一步。
+ * Released under the MIT license
+ */
+
 
 export default function (initMatrix4) {
 

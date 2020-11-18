@@ -1,7 +1,7 @@
 {
   "name": "@hai2007/tool",
-  "version": "0.2.1",
-  "description": "🧰 前端常用的工具类方法汇总。",
+  "version": "0.3.0",
+  "description": "💡 前端常用的工具类方法汇总。",
   "main": "./dist/tool.min.js",
   "scripts": {
     "start": "npm install && npm run build",

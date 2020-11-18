@@ -1,4 +1,4 @@
-# 🧰 tool.js - 前端常用的工具类方法汇总
+# 💡 tool.js - 前端常用的工具类方法汇总
 
 <p>
   <a href="https://yelloxing.gitee.io/npm-downloads?interval=7&packages=@hai2007/tool"><img src="https://img.shields.io/npm/dm/@hai2007/tool.svg" alt="downloads"></a>
@@ -44,6 +44,44 @@ import Hermite from '@hai2007/tool/Hermite.js';
 
 [<< 查看文档](./apis/Hermite.md)
 
+- 获取值的类型
+
+```js
+import getType from '@hai2007/tool/getType.js';
+```
+
+[<< 查看文档](./apis/getType.md)
+
+- 值类型判断方法
+
+```js
+import {
+    isUndefined, isNull, isBoolean, isNumber, isString, isSymbol,
+    isFunction, isArray, isError, isPlainObject,
+    isElement, isAttribute, isText, isComment
+} from '@hai2007/tool/type.js';
+```
+
+## Special attention
+
+为了减小打包体积，上面单独引入的方式引入的文件都没有经过babel转义，如果你希望使用转义后的，可以有如下方式引入：
+
+```js
+import tool from '@hai2007/tool';
+```
+
+或
+
+```html
+<script src='https://cdn.jsdelivr.net/npm/@hai2007/tool'></script>
+```
+
+如果是node.js环境，请使用这种方式引入：
+
+```js
+const tool = require('@hai2007/tool');
+```
+
 ## 联系我们
 
 - QQ: 2501482523
@@ -53,4 +91,4 @@ import Hermite from '@hai2007/tool/Hermite.js';
 ---------------------------------------
 [MIT](https://github.com/hai2007/tool.js/blob/master/LICENSE)
 
-Copyright (c) 2020 hai2007 走一步，再走一步。
+Copyright (c) 2020-present hai2007 走一步，再走一步。

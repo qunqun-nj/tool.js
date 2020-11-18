@@ -1,6 +1,14 @@
 import initConfig from './.inner/initConfig';
 
-// Hermite三次插值
+/*!
+ * 💡 - Hermite三次插值
+ * https://github.com/hai2007/tool.js/blob/master/Hermite.js
+ *
+ * author hai2007 < https://hai2007.gitee.io/sweethome >
+ *
+ * Copyright (c) 2020-present hai2007 走一步，再走一步。
+ * Released under the MIT license
+ */
 
 export default function (config) {
 

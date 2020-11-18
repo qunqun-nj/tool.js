@@ -12,3 +12,8 @@ v0.2.1:
     date:2020-11-17
     changes:
       -  添加banner打包头说明文字
+v0.3.0:
+    date:2020-11-18
+    changes:
+      -  添加 “获取值的类型” getType.js
+      -  添加 “值类型判断方法” type.js
