@@ -56,6 +56,7 @@ import getType from '@hai2007/tool/getType.js';
 
 ```js
 import {
+    isObject,
     isUndefined, isNull, isBoolean, isNumber, isString, isSymbol,
     isFunction, isArray, isError, isPlainObject,
     isElement, isAttribute, isText, isComment

@@ -26,7 +26,7 @@ let domTypeHelp = (types, value) => {
  * Released under the MIT license
  */
 
-export let isObject = isObject;
+export let isObject = _isObject;
 
 // 基本类型
 export let isUndefined = input => input === undefined;

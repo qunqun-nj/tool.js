@@ -9,7 +9,7 @@
  * Copyright (c) 2020-present hai2007 走一步，再走一步。
  * Released under the MIT license
  *
- * Date:Wed Nov 18 2020 16:54:37 GMT+0800 (GMT+08:00)
+ * Date:Tue Nov 24 2020 09:48:33 GMT+0800 (GMT+08:00)
  */
 (function () {
   'use strict';
@@ -380,7 +380,7 @@
    * @param {*} value 需要判断类型的值
    * @returns {boolean} 如果是Object返回true，否则返回false
    */
-  function isObject (value) {
+  function _isObject (value) {
     var type = _typeof(value);
 
     return value != null && (type === 'object' || type === 'function');
@@ -458,7 +458,7 @@
    */
 
   function _isFunction (value) {
-    if (!isObject(value)) {
+    if (!_isObject(value)) {
       return false;
     }
 
@@ -530,7 +530,7 @@
 
   function getType$1 (input) {
     // 首先，判断是不是对象（朴素对象plain也是对象），具体类型设置为，未定义
-    var result = [isObject(input) ? "Object" : "Basic", "*"]; // 基本类型
+    var result = [_isObject(input) ? "Object" : "Basic", "*"]; // 基本类型
 
     if (input === undefined) result[1] = 'Undefined';else if (input === null) result[1] = 'Null';else if (_isBoolean(input)) result[1] = 'Boolean';else if (_isNumber(input)) result[1] = 'Number';else if (_isString(input)) result[1] = 'String';else if (_isSymbol(input)) result[1] = 'Symbol'; // 引用类型
     else if (_isFunction(input)) result[1] = 'Function';else if (Array.isArray(input)) result[1] = 'Array'; // 一个类似数组的类型没有被统计进来

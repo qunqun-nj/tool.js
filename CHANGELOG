@@ -17,3 +17,7 @@ v0.3.0:
     changes:
       -  添加 “获取值的类型” getType.js
       -  添加 “值类型判断方法” type.js
+v0.3.1:
+    date:2020-11-24
+    changes:
+      -  修复type.js中错误的变量名导致的致命错误
