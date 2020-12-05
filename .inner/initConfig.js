@@ -6,7 +6,7 @@
  * @return {Json}
  */
 export default function (init, data) {
-    for (let key in data)
+    for (var key in data)
         try {
             init[key] = data[key];
         } catch (e) {

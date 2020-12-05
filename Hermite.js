@@ -17,18 +17,18 @@ export default function (config) {
         "u": 0.5
     }, config);
 
-    let MR, a, b;
+    var MR, a, b;
 
     /**
      * 根据x值返回y值
      * @param {Number} x
      */
-    let hermite = function (x) {
+    var hermite = function (x) {
         if (MR) {
-            let sx = (x - a) / (b - a),
+            var sx = (x - a) / (b - a),
                 sx2 = sx * sx,
                 sx3 = sx * sx2;
-            let sResult = sx3 * MR[0] + sx2 * MR[1] + sx * MR[2] + MR[3];
+            var sResult = sx3 * MR[0] + sx2 * MR[1] + sx * MR[2] + MR[3];
             return sResult * (b - a);
         } else throw new Error('You shoud first set the position!');
     };
@@ -46,7 +46,7 @@ export default function (config) {
         if (x1 < x2) {
             // 记录原始尺寸
             a = x1; b = x2;
-            let p3 = config.u * s1,
+            var p3 = config.u * s1,
                 p4 = config.u * s2;
             // 缩放到[0,1]定义域
             y1 /= (x2 - x1);

@@ -18,7 +18,7 @@ export default function (value) {
         return true;
     }
 
-    let proto = value;
+    var proto = value;
     while (Object.getPrototypeOf(proto) !== null) {
         proto = Object.getPrototypeOf(proto);
     }

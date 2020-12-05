@@ -10,16 +10,16 @@ import {
 } from './type';
 
 // 导出
-let tool = {
-    animation,
-    Matrix4,
-    Hermite,
-    getType,
+var tool = {
+    animation: animation,
+    Matrix4: Matrix4,
+    Hermite: Hermite,
+    getType: getType,
 
     // 类型判断
-    isUndefined, isNull, isBoolean, isNumber, isString, isSymbol,
-    isFunction, isArray, isError, isPlainObject,
-    isElement, isAttribute, isText, isComment
+    isUndefined: isUndefined, isNull: isNull, isBoolean: isBoolean, isNumber: isNumber, isString: isString, isSymbol: isSymbol,
+    isFunction: isFunction, isArray: isArray, isError: isError, isPlainObject: isPlainObject,
+    isElement: isElement, isAttribute: isAttribute, isText: isText, isComment: isComment
 
 };
 

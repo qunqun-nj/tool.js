@@ -10,7 +10,7 @@ import _isFunction from './.inner/type/isFunction';
 import _isError from './.inner/type/isError';
 import _isPlainObject from '././.inner/type/isPlainObject';
 
-let domTypeHelp = (types, value) => {
+var domTypeHelp = function (types, value) {
     return value !== null && typeof value === 'object' &&
         types.indexOf(value.nodeType) > -1 &&
         !_isPlainObject(value);
@@ -26,24 +26,24 @@ let domTypeHelp = (types, value) => {
  * Released under the MIT license
  */
 
-export let isObject = _isObject;
+export var isObject = _isObject;
 
 // 基本类型
-export let isUndefined = input => input === undefined;
-export let isNull = input => input === null;
-export let isBoolean = _isBoolean;
-export let isNumber = _isNumber;
-export let isString = _isString;
-export let isSymbol = _isSymbol;
+export var isUndefined = function (input) { return input === undefined };
+export var isNull = function (input) { return input === null };
+export var isBoolean = _isBoolean;
+export var isNumber = _isNumber;
+export var isString = _isString;
+export var isSymbol = _isSymbol;
 
 // 引用类型
-export let isFunction = _isFunction;
-export let isArray = input => Array.isArray(input);
-export let isError = _isError;
-export let isPlainObject = _isPlainObject;
+export var isFunction = _isFunction;
+export var isArray = function (input) { return Array.isArray(input) };
+export var isError = _isError;
+export var isPlainObject = _isPlainObject;
 
 // 结点类型
-export let isElement = input => domTypeHelp([1, 9, 11], input);
-export let isAttribute = input => domTypeHelp([2], input);
-export let isText = input => domTypeHelp([3], input);
-export let isComment = input => domTypeHelp([8], input);
+export var isElement = function (input) { return domTypeHelp([1, 9, 11], input) };
+export var isAttribute = function (input) { return domTypeHelp([2], input) };
+export var isText = function (input) { return domTypeHelp([3], input) };
+export var isComment = function (input) { return domTypeHelp([8], input) };

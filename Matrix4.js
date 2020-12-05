@@ -1,9 +1,9 @@
 // 二个4x4矩阵相乘
 // 或矩阵和齐次坐标相乘
-let _multiply = function (matrix4, param) {
-    let newParam = [];
-    for (let i = 0; i < 4; i++)
-        for (let j = 0; j < param.length / 4; j++)
+var _multiply = function (matrix4, param) {
+    var newParam = [];
+    for (var i = 0; i < 4; i++)
+        for (var j = 0; j < param.length / 4; j++)
             newParam[j * 4 + i] =
                 matrix4[i] * param[j * 4] +
                 matrix4[i + 4] * param[j * 4 + 1] +
@@ -30,14 +30,14 @@ import _transform from './.inner/transform/transform';
 
 export default function (initMatrix4) {
 
-    let matrix4 = initMatrix4 || [
+    var matrix4 = initMatrix4 || [
         1, 0, 0, 0,
         0, 1, 0, 0,
         0, 0, 1, 0,
         0, 0, 0, 1
     ];
 
-    let matrix4Obj = {
+    var matrix4Obj = {
 
         // 移动
         "move": function (dis, a, b, c) {

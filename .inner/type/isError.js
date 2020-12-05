@@ -13,7 +13,7 @@ export default function (value) {
         return false;
     }
 
-    const type = getType(value);
+    var type = getType(value);
     return type === '[object Error]' || type === '[object DOMException]' ||
         (typeof value.message === 'string' && typeof value.name === 'string' && !isPlainObject(value));
 };

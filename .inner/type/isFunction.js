@@ -12,7 +12,7 @@ export default function (value) {
         return false;
     }
 
-    const type = getType(value);
+    var type = getType(value);
     return type === '[object Function]' || type === '[object AsyncFunction]' ||
         type === '[object GeneratorFunction]' || type === '[object Proxy]';
 };

@@ -7,6 +7,6 @@ import getType from './getType';
  * @returns {boolean} 如果是String返回true，否则返回false
  */
 export default function (value) {
-    const type = typeof value;
+    var type = typeof value;
     return type === 'string' || (type === 'object' && value != null && !Array.isArray(value) && getType(value) === '[object String]');
 };

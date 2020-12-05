@@ -41,7 +41,7 @@ import isPlainObject from '././.inner/type/isPlainObject';
 export default function (input) {
 
     // 首先，判断是不是对象（朴素对象plain也是对象），具体类型设置为，未定义
-    let result = [isObject(input) ? "Object" : "Basic", "*"];
+    var result = [isObject(input) ? "Object" : "Basic", "*"];
 
     // 基本类型
     if (input === undefined) result[1] = 'Undefined';

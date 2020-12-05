@@ -1,4 +1,4 @@
-const toString = Object.prototype.toString;
+var toString = Object.prototype.toString;
 
 /**
  * 获取一个值的类型字符串[object type]

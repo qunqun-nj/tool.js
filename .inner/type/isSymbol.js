@@ -7,6 +7,6 @@ import getType from './getType';
  * @returns {boolean} 如果是symbol返回true，否则返回false
  */
 export default function (value) {
-    const type = typeof value;
+    var type = typeof value;
     return type === 'symbol' || (type === 'object' && value !== null && getType(value) === '[object Symbol]');
 };
