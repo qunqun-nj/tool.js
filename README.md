@@ -83,6 +83,12 @@ import tool from '@hai2007/tool';
 const tool = require('@hai2007/tool');
 ```
 
+## ES笔记
+
+- [理解prototype和__proto__（继承与原型链）](./notebook/prototype.md)
+- [二进制数据（ArrayBuffer + TypedArray + DataView）](./notebook/ArrayBuffer-TypedArray-DataView.md)
+- [Symbol + Generator函数 + Promise](./notebook/Symbol-Generator-Promise.md)
+
 ## 联系我们
 
 - QQ: 2501482523
