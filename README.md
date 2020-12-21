@@ -1,7 +1,7 @@
 # 💡 tool.js - 前端常用的工具类方法汇总
 
 <p>
-  <a href="https://yelloxing.gitee.io/npm-downloads?interval=7&packages=@hai2007/tool"><img src="https://img.shields.io/npm/dm/@hai2007/tool.svg" alt="downloads"></a>
+  <a href="https://hai2007.gitee.io/npm-downloads?interval=7&packages=@hai2007/tool"><img src="https://img.shields.io/npm/dm/@hai2007/tool.svg" alt="downloads"></a>
   <a href="https://packagephobia.now.sh/result?p=@hai2007/tool"><img src="https://packagephobia.now.sh/badge?p=@hai2007/tool" alt="install size"></a>
   <a href="https://www.jsdelivr.com/package/npm/@hai2007/tool"><img src="https://data.jsdelivr.com/v1/package/npm/@hai2007/tool/badge" alt="CDN"></a>
   <a href="https://www.npmjs.com/package/@hai2007/tool"><img src="https://img.shields.io/npm/v/@hai2007/tool.svg" alt="Version"></a>
