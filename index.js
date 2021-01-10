@@ -9,6 +9,8 @@ import {
     isElement, isAttribute, isText, isComment
 } from './type';
 
+import xhtml from './xhtml';
+
 // 导出
 var tool = {
     animation: animation,
@@ -19,7 +21,10 @@ var tool = {
     // 类型判断
     isUndefined: isUndefined, isNull: isNull, isBoolean: isBoolean, isNumber: isNumber, isString: isString, isSymbol: isSymbol,
     isFunction: isFunction, isArray: isArray, isError: isError, isPlainObject: isPlainObject,
-    isElement: isElement, isAttribute: isAttribute, isText: isText, isComment: isComment
+    isElement: isElement, isAttribute: isAttribute, isText: isText, isComment: isComment,
+
+    // DOM操作
+    xhtml:xhtml
 
 };
 

@@ -63,6 +63,14 @@ import {
 } from '@hai2007/tool/type.js';
 ```
 
+- 提供常用的DOM操作方法
+
+```js
+import xhtml from '@hai2007/tool/xhtml.js';
+```
+
+[<< 查看文档](./apis/xhtml.md)
+
 ## Special attention
 
 如果你希望一下子引入全部方法，可以有如下方式引入：
