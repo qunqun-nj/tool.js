@@ -11,11 +11,21 @@ import {
 
 import xhtml from './xhtml';
 
+import getKeyString from './getKeyString';
+
 // 导出
 var tool = {
+
+    // 动画
     animation: animation,
+
+    // 矩阵
     Matrix4: Matrix4,
+
+    // 函数插值
     Hermite: Hermite,
+
+    // 获取类型
     getType: getType,
 
     // 类型判断
@@ -24,7 +34,10 @@ var tool = {
     isElement: isElement, isAttribute: isAttribute, isText: isText, isComment: isComment,
 
     // DOM操作
-    xhtml:xhtml
+    xhtml: xhtml,
+
+    // 键盘按键
+    getKeyString: getKeyString
 
 };
 

@@ -71,6 +71,14 @@ import xhtml from '@hai2007/tool/xhtml.js';
 
 [<< 查看文档](./apis/xhtml.md)
 
+- 获取键盘此时按下的键的组合结果
+
+```js
+import getKeyString from '@hai2007/tool/getKeyString.js';
+```
+
+[<< 查看文档](./apis/getKeyString.md)
+
 ## Special attention
 
 如果你希望一下子引入全部方法，可以有如下方式引入：

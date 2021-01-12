@@ -29,3 +29,7 @@ v0.5.0:
     date:2021-01-10
     changes:
       -  添加 “提供常用的DOM操作方法” xhtml.js
+v0.6.0:
+    date:2021-01-12
+    changes:
+      -  添加 “获取键盘此时按下的键的组合结果” getKeyString.js
