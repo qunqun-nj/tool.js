@@ -6,6 +6,6 @@
 var keyString = getKeyString(event);
 ```
 
-如何返回的```keyString```就是此时按下的键。
+返回的```keyString```就是此时按下的键。
 
 [<< 返回首页](../README.md)
