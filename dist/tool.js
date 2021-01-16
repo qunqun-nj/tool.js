@@ -4,12 +4,12 @@
  *
  * author 你好2007 < https://hai2007.gitee.io/sweethome >
  *
- * version 0.6.0
+ * version 0.6.1
  *
  * Copyright (c) 2020-present hai2007 走一步，再走一步。
  * Released under the MIT license
  *
- * Date:Tue Jan 12 2021 14:34:29 GMT+0800 (GMT+08:00)
+ * Date:Sat Jan 16 2021 17:19:40 GMT+0800 (GMT+08:00)
  */
 (function () {
     'use strict';
@@ -869,6 +869,34 @@
                 width: elemWidth,
                 height: elemHeight
             };
+        },
+
+        // 在被选元素内部的结尾插入内容
+        "append": function (el, template) {
+            var node = this.isNode(template) ? template : this.toNode(template);
+            el.appendChild(node);
+            return node;
+        },
+
+        // 在被选元素内部的开头插入内容
+        "prepend": function (el, template) {
+            var node = this.isNode(template) ? template : this.toNode(template);
+            el.insertBefore(node, el.childNodes[0]);
+            return node;
+        },
+
+        // 在被选元素之后插入内容
+        "after": function (el, template) {
+            var node = this.isNode(template) ? template : this.toNode(template);
+            el.parentNode.insertBefore(node, el.nextSibling);
+            return node;
+        },
+
+        // 在被选元素之前插入内容
+        "before": function (el, template) {
+            var node = this.isNode(template) ? template : this.toNode(template);
+            el.parentNode.insertBefore(node, el);
+            return node;
         }
 
     };

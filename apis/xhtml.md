@@ -113,4 +113,28 @@ xhtml.setStyles(dom, styleJson);
 xhtml.size(dom, type);
 ```
 
+- 在被选元素内部的结尾插入内容
+
+```js
+var node = xhtml.append(el, template|node);
+```
+
+- 在被选元素内部的开头插入内容
+
+```js
+var node = xhtml.prepend(el, template|node);
+```
+
+- 在被选元素之后插入内容
+
+```js
+var node = xhtml.after(el, template|node);
+```
+
+- 在被选元素之前插入内容
+
+```js
+var node = xhtml.before(el, template|node);
+```
+
 [<< 返回首页](../README.md)

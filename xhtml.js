@@ -249,6 +249,34 @@ export default {
             width: elemWidth,
             height: elemHeight
         };
+    },
+
+    // 在被选元素内部的结尾插入内容
+    "append": function (el, template) {
+        var node = this.isNode(template) ? template : this.toNode(template);
+        el.appendChild(node);
+        return node;
+    },
+
+    // 在被选元素内部的开头插入内容
+    "prepend": function (el, template) {
+        var node = this.isNode(template) ? template : this.toNode(template);
+        el.insertBefore(node, el.childNodes[0]);
+        return node;
+    },
+
+    // 在被选元素之后插入内容
+    "after": function (el, template) {
+        var node = this.isNode(template) ? template : this.toNode(template);
+        el.parentNode.insertBefore(node, el.nextSibling);
+        return node;
+    },
+
+    // 在被选元素之前插入内容
+    "before": function (el, template) {
+        var node = this.isNode(template) ? template : this.toNode(template);
+        el.parentNode.insertBefore(node, el);
+        return node;
     }
 
 };
