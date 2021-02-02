@@ -26,7 +26,7 @@
             (function (i) {
                 animations[i] = tool.animation(function (deep) {
                     lis[i].style.borderLeft = (500 * deep) + "px solid " + colors[i];
-                }, 3000 * (i + 1), function (deep) {
+                }, 3000 * i, function (deep) {
                     console.log('结束了：' + i + ",deep=" + deep);
                 });
             })(i);

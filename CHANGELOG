@@ -37,3 +37,7 @@ v0.6.1:
     date:2021-01-16
     changes:
       -  新增结点的四种追加方法 xhtml.js
+v0.6.2:
+    date:2021-02-02
+    changes:
+      -  修复 “动画轮播” animation.js 对于设置动画时长为0的错误处理

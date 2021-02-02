@@ -26,13 +26,15 @@ var $timerId = null;
  */
 export default function (doback, duration, callback) {
 
+    // 如果没有传递时间，使用内置默认值
+    if (arguments.length < 2) duration = $speeds;
+
     var clock = {
         //把tick函数推入堆栈
         "timer": function (tick, duration, callback) {
             if (!tick) {
                 throw new Error('Tick is required!');
             }
-            duration = duration || $speeds;
             var id = new Date().valueOf() + "_" + (Math.random() * 1000).toFixed(0);
             $timers.push({
                 "id": id,

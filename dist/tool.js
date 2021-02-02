@@ -4,12 +4,12 @@
  *
  * author 你好2007 < https://hai2007.gitee.io/sweethome >
  *
- * version 0.6.1
+ * version 0.6.2
  *
  * Copyright (c) 2020-present hai2007 走一步，再走一步。
  * Released under the MIT license
  *
- * Date:Sat Jan 16 2021 17:19:40 GMT+0800 (GMT+08:00)
+ * Date:Tue Feb 02 2021 17:15:12 GMT+0800 (GMT+08:00)
  */
 (function () {
     'use strict';
@@ -42,13 +42,15 @@
      */
     function animation (doback, duration, callback) {
 
+        // 如果没有传递时间，使用内置默认值
+        if (arguments.length < 2) duration = $speeds;
+
         var clock = {
             //把tick函数推入堆栈
             "timer": function (tick, duration, callback) {
                 if (!tick) {
                     throw new Error('Tick is required!');
                 }
-                duration = duration || $speeds;
                 var id = new Date().valueOf() + "_" + (Math.random() * 1000).toFixed(0);
                 $timers.push({
                     "id": id,
