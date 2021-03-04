@@ -6,7 +6,7 @@
   <a href="https://www.jsdelivr.com/package/npm/@hai2007/tool"><img src="https://data.jsdelivr.com/v1/package/npm/@hai2007/tool/badge" alt="CDN"></a>
   <a href="https://www.npmjs.com/package/@hai2007/tool"><img src="https://img.shields.io/npm/v/@hai2007/tool.svg" alt="Version"></a>
   <a href="https://github.com/hai2007/tool.js/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/@hai2007/tool.svg" alt="License"></a>
-    <a href="https://github.com/hai2007/tool.js">
+  <a href="https://github.com/hai2007/tool.js" target='_blank'>
         <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/hai2007/tool.js?style=social">
     </a>
 </p>
