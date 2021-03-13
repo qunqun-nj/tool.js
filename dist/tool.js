@@ -4,12 +4,12 @@
  *
  * author 你好2007 < https://hai2007.gitee.io/sweethome >
  *
- * version 0.6.2
+ * version 0.6.3
  *
  * Copyright (c) 2020-present hai2007 走一步，再走一步。
  * Released under the MIT license
  *
- * Date:Tue Feb 02 2021 17:15:12 GMT+0800 (GMT+08:00)
+ * Date:Sun Mar 14 2021 00:24:50 GMT+0800 (GMT+08:00)
  */
 (function () {
     'use strict';
@@ -932,7 +932,7 @@
 
         // 控制键
         16: "shift", 17: "ctrl", 18: "alt", 91: "command", 92: "command", 93: "command", 9: "tab", 20: "caps lock", 32: "spacebar", 8: "backspace", 13: "enter", 27: "esc",
-        46: "delete", 45: "insert", 144: "number lock", 145: "scroll lock", 12: "clear", 45: "insert",
+        46: "delete", 45: "insert", 144: "number lock", 145: "scroll lock", 12: "clear",
         19: "pause",
 
         // 功能键

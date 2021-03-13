@@ -27,7 +27,7 @@ var dictionary = {
 
     // 控制键
     16: "shift", 17: "ctrl", 18: "alt", 91: "command", 92: "command", 93: "command", 9: "tab", 20: "caps lock", 32: "spacebar", 8: "backspace", 13: "enter", 27: "esc",
-    46: "delete", 45: "insert", 144: "number lock", 145: "scroll lock", 12: "clear", 45: "insert",
+    46: "delete", 45: "insert", 144: "number lock", 145: "scroll lock", 12: "clear",
     19: "pause",
 
     // 功能键

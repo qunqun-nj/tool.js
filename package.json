@@ -1,6 +1,6 @@
 {
   "name": "@hai2007/tool",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "💡 前端常用的工具类方法汇总。",
   "main": "./dist/tool.min.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/hai2007/tool.js#readme",
   "devDependencies": {
-    "@hai2007/nodejs": "^0.1.0",
+    "@hai2007/nodejs": "^1.0.0",
     "rollup": "^1.17.0",
     "uglify-js": "^3.10.2"
   }
