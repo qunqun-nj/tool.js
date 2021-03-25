@@ -45,3 +45,7 @@ v0.6.3:
     date:2021-03-14
     changes:
       -  修复 “获取键盘此时按下的键的组合结果” getKeyString.js 中属性重复定义问题，这会导致严格模式下运行可能出错
+v0.6.4:
+    date:2021-03-25
+    chagnes:
+      - xhtml.bind和xhtml.unbind方法添加对HTMLCollection类型的支持

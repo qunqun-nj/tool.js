@@ -51,7 +51,7 @@ export default {
     // 绑定事件
     "bind": function (dom, eventType, callback) {
 
-        if (dom.constructor === Array || dom.constructor === NodeList) {
+        if (dom.constructor === Array || dom.constructor === NodeList || dom.constructor === HTMLCollection) {
             for (var i = 0; i < dom.length; i++) {
                 this.bind(dom[i], eventType, callback);
             }
@@ -66,7 +66,7 @@ export default {
     // 去掉绑定事件
     "unbind": function (dom, eventType, handler) {
 
-        if (dom.constructor === Array || dom.constructor === NodeList) {
+        if (dom.constructor === Array || dom.constructor === NodeList || dom.constructor === HTMLCollection) {
             for (var i = 0; i < dom.length; i++) {
                 this.unbind(dom[i], eventType, handler);
             }

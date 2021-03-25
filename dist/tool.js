@@ -4,12 +4,12 @@
  *
  * author 你好2007 < https://hai2007.gitee.io/sweethome >
  *
- * version 0.6.3
+ * version 0.6.4
  *
  * Copyright (c) 2020-present hai2007 走一步，再走一步。
  * Released under the MIT license
  *
- * Date:Sun Mar 14 2021 00:24:50 GMT+0800 (GMT+08:00)
+ * Date:Thu Mar 25 2021 22:37:43 GMT+0800 (GMT+08:00)
  */
 (function () {
     'use strict';
@@ -673,7 +673,7 @@
         // 绑定事件
         "bind": function (dom, eventType, callback) {
 
-            if (dom.constructor === Array || dom.constructor === NodeList) {
+            if (dom.constructor === Array || dom.constructor === NodeList || dom.constructor === HTMLCollection) {
                 for (var i = 0; i < dom.length; i++) {
                     this.bind(dom[i], eventType, callback);
                 }
@@ -688,7 +688,7 @@
         // 去掉绑定事件
         "unbind": function (dom, eventType, handler) {
 
-            if (dom.constructor === Array || dom.constructor === NodeList) {
+            if (dom.constructor === Array || dom.constructor === NodeList || dom.constructor === HTMLCollection) {
                 for (var i = 0; i < dom.length; i++) {
                     this.unbind(dom[i], eventType, handler);
                 }
