@@ -102,13 +102,6 @@ import tool from '@hai2007/tool';
 const tool = require('@hai2007/tool');
 ```
 
-## ES笔记
-
-- [理解prototype和__proto__（继承与原型链）](./notebook/prototype.md)
-- [二进制数据（ArrayBuffer + TypedArray + DataView）](./notebook/ArrayBuffer-TypedArray-DataView.md)
-- [Symbol + Generator函数 + Promise](./notebook/Symbol-Generator-Promise.md)
-- [JavaScript一些基本的概念和说明](./notebook/basic.md)
-
 开源协议
 ---------------------------------------
 [MIT](https://github.com/hai2007/tool.js/blob/master/LICENSE)
