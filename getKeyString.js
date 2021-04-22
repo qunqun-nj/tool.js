@@ -52,6 +52,9 @@ export default function (event) {
     var key = dictionary[keycode] || keycode;
     if (!key) return;
     if (key.constructor !== Array) key = [key, key];
+
+    var _key=key[0];
+
     var shift = event.shiftKey ? "shift+" : "",
         alt = event.altKey ? "alt+" : "",
         ctrl = event.ctrlKey ? "ctrl+" : "";
@@ -72,5 +75,5 @@ export default function (event) {
         resultKey = resultKey.replace(/\+$/, '');
     }
 
-    return resultKey;
+    return resultKey==''?_key:resultKey;
 };

@@ -4,12 +4,12 @@
  *
  * author 你好2007 < https://hai2007.gitee.io/sweethome >
  *
- * version 0.6.4
+ * version 0.6.5
  *
  * Copyright (c) 2020-present hai2007 走一步，再走一步。
  * Released under the MIT license
  *
- * Date:Thu Mar 25 2021 22:37:43 GMT+0800 (GMT+08:00)
+ * Date:Thu Apr 22 2021 10:30:03 GMT+0800 (GMT+08:00)
  */
 (function () {
     'use strict';
@@ -957,6 +957,9 @@
         var key = dictionary[keycode] || keycode;
         if (!key) return;
         if (key.constructor !== Array) key = [key, key];
+
+        var _key=key[0];
+
         var shift = event.shiftKey ? "shift+" : "",
             alt = event.altKey ? "alt+" : "",
             ctrl = event.ctrlKey ? "ctrl+" : "";
@@ -977,7 +980,7 @@
             resultKey = resultKey.replace(/\+$/, '');
         }
 
-        return resultKey;
+        return resultKey==''?_key:resultKey;
     }
 
     // 导出
