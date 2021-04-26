@@ -53,3 +53,7 @@ v0.6.5:
     date:2021-04-22
     chagnes:
       - 修复 “获取键盘此时按下的键的组合结果” getKeyString.js 中对于shift放开的错误判断
+v0.6.6:
+    date:2021-04-26
+    chagnes:
+      - 修复DOM操作方法toNode对一些特殊标签的支持
