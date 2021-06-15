@@ -48,12 +48,16 @@ v0.6.3:
 v0.6.4:
     date:2021-03-25
     chagnes:
-      - xhtml.bind和xhtml.unbind方法添加对HTMLCollection类型的支持
+      -  xhtml.bind和xhtml.unbind方法添加对HTMLCollection类型的支持
 v0.6.5:
     date:2021-04-22
     chagnes:
-      - 修复 “获取键盘此时按下的键的组合结果” getKeyString.js 中对于shift放开的错误判断
+      -  修复 “获取键盘此时按下的键的组合结果” getKeyString.js 中对于shift放开的错误判断
 v0.6.6:
     date:2021-04-26
     chagnes:
-      - 修复DOM操作方法toNode对一些特殊标签的支持
+      -  修复DOM操作方法toNode对一些特殊标签的支持
+v0.7.0:
+    date:2021-06-15
+    chagnes:
+      -  添加 “刻度尺刻度求解“ ruler.js

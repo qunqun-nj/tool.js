@@ -13,6 +13,8 @@ import xhtml from './xhtml';
 
 import getKeyString from './getKeyString';
 
+import ruler from './ruler';
+
 // 导出
 var tool = {
 
@@ -37,7 +39,10 @@ var tool = {
     xhtml: xhtml,
 
     // 键盘按键
-    getKeyString: getKeyString
+    getKeyString: getKeyString,
+
+    // 刻度
+    ruler: ruler
 
 };
 

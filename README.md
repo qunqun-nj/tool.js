@@ -82,6 +82,14 @@ import getKeyString from '@hai2007/tool/getKeyString.js';
 
 [<< 查看文档](./apis/getKeyString.md)
 
+- 刻度尺刻度求解
+
+```js
+import ruler from '@hai2007/tool/ruler.js';
+```
+
+[<< 查看文档](./apis/ruler.md)
+
 ## Special attention
 
 如果你希望一下子引入全部方法，可以有如下方式引入：
