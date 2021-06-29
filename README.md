@@ -111,7 +111,7 @@ import tool from '@hai2007/tool';
 或
 
 ```html
-<script src='https://cdn.jsdelivr.net/npm/@hai2007/tool'></script>
+<script src='https://cdn.jsdelivr.net/npm/@hai2007/tool@0'></script>
 ```
 
 如果是node.js环境，请使用这种方式引入：
