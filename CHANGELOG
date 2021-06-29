@@ -61,3 +61,7 @@ v0.7.0:
     date:2021-06-15
     chagnes:
       -  添加 “刻度尺刻度求解“ ruler.js
+v0.8.0:
+    date:2021-06-29
+    chagnes:
+      -  添加 “字符串操作“ string.js

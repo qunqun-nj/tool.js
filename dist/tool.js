@@ -4,12 +4,12 @@
  *
  * author 你好2007 < https://hai2007.gitee.io/sweethome >
  *
- * version 0.7.0
+ * version 0.8.0
  *
  * Copyright (c) 2020-present hai2007 走一步，再走一步。
  * Released under the MIT license
  *
- * Date:Tue Jun 15 2021 13:25:06 GMT+0800 (中国标准时间)
+ * Date:Tue Jun 29 2021 10:09:29 GMT+0800 (中国标准时间)
  */
 (function () {
     'use strict';
@@ -1077,6 +1077,40 @@
         return rulerArray;
     }
 
+    function _ReadString (express) {
+
+        var reader = {
+            index: -1,
+            currentChar: null
+        };
+
+        // 读取下一个字符
+        reader.readNext = function () {
+            reader.currentChar = reader.index++ < express.length - 1 ? express[reader.index] : null;
+            return reader.currentChar;
+        };
+
+        // 获取往后num个值
+        reader.getNextN = function (num) {
+            return express.substring(reader.index, num + reader.index > express.length ? express.length : num + reader.index);
+        };
+
+        return reader;
+    }
+
+    /*!
+     * 💡 - 字符串操作
+     * https://github.com/hai2007/tool.js/blob/master/string.js
+     *
+     * author hai2007 < https://hai2007.gitee.io/sweethome >
+     *
+     * Copyright (c) 2021-present hai2007 走一步，再走一步。
+     * Released under the MIT license
+     */
+
+    // 字符串分析
+    var ReadString = _ReadString;
+
     // 导出
     var tool = {
 
@@ -1104,7 +1138,10 @@
         getKeyString: getKeyString,
 
         // 刻度
-        ruler: ruler
+        ruler: ruler,
+
+        // 字符串
+        ReadString: ReadString
 
     };
 

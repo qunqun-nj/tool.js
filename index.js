@@ -15,6 +15,10 @@ import getKeyString from './getKeyString';
 
 import ruler from './ruler';
 
+import {
+    ReadString
+} from './string';
+
 // 导出
 var tool = {
 
@@ -42,7 +46,10 @@ var tool = {
     getKeyString: getKeyString,
 
     // 刻度
-    ruler: ruler
+    ruler: ruler,
+
+    // 字符串
+    ReadString: ReadString
 
 };
 

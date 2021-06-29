@@ -90,6 +90,16 @@ import ruler from '@hai2007/tool/ruler.js';
 
 [<< 查看文档](./apis/ruler.md)
 
+- 字符串操作
+
+```js
+import {
+    ReadString
+} from '@hai2007/tool/string.js';
+```
+
+[<< 查看文档](./apis/string.md)
+
 ## Special attention
 
 如果你希望一下子引入全部方法，可以有如下方式引入：
