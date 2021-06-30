@@ -110,7 +110,16 @@ xhtml.setStyles(dom, styleJson);
 - 获取元素大小
 
 ```js
-xhtml.size(dom, type);
+// type可选，默认border
+xhtml.size(dom[, type]);
+
+/*
+type有如下可选：
+1.content:内容
+2.padding:内容+内边距
+3.border:内容+内边距+边框
+4.scroll:滚动的宽（不包括border）
+*/
 ```
 
 - 在被选元素内部的结尾插入内容
