@@ -65,3 +65,7 @@ v0.8.0:
     date:2021-06-29
     chagnes:
       -  添加 “字符串操作“ string.js
+v0.8.1:
+    date:2021-07-02
+    chagnes:
+      -  优化 “刻度尺刻度求解“ ruler.js 对于小数点位数的控制

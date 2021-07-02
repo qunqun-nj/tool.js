@@ -23,6 +23,11 @@ export default function (maxValue, minValue, num) {
         return [maxValue];
     }
 
+    // 计算最终小数点应该保留的位数
+    var dotMaxNum = (maxValue + ".").split('.')[1].length;
+    var dotMinNum = (minValue + ".").split('.')[1].length;
+    var dotNum = dotMaxNum > dotMinNum ? dotMaxNum : dotMinNum;
+
     // 为了变成 -100 ~ 100 需要放大或者缩小的倍数
     var times100 =
 
@@ -64,8 +69,9 @@ export default function (maxValue, minValue, num) {
     // 获取最终的刻度尺数组
     rulerArray.push(begin);
     for (index = 1; rulerArray[rulerArray.length - 1] < maxValue; index++) {
-        rulerArray.push(begin + distance * index);
+        rulerArray.push(+(begin + distance * index).toFixed(dotNum));
     }
+    rulerArray[0] = +(begin).toFixed(dotNum);
 
     return rulerArray;
 };
