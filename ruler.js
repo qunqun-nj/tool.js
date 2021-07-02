@@ -73,5 +73,12 @@ export default function (maxValue, minValue, num) {
     }
     rulerArray[0] = +(begin).toFixed(dotNum);
 
-    return rulerArray;
+    // 最后，进行校对
+    var _rulerArray = [rulerArray[0]];
+    for (var i = 1; i < rulerArray.length; i++) {
+        if (_rulerArray[_rulerArray.length - 1] != rulerArray[i]) {
+            _rulerArray.push(rulerArray[i]);
+        }
+    }
+    return _rulerArray;
 };

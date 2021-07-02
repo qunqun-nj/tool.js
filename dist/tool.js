@@ -4,12 +4,12 @@
  *
  * author 你好2007 < https://hai2007.gitee.io/sweethome >
  *
- * version 0.8.1
+ * version 0.8.2
  *
  * Copyright (c) 2020-present hai2007 走一步，再走一步。
  * Released under the MIT license
  *
- * Date:Fri Jul 02 2021 10:32:50 GMT+0800 (中国标准时间)
+ * Date:Fri Jul 02 2021 11:07:24 GMT+0800 (中国标准时间)
  */
 (function () {
     'use strict';
@@ -1080,7 +1080,14 @@
         }
         rulerArray[0] = +(begin).toFixed(dotNum);
 
-        return rulerArray;
+        // 最后，进行校对
+        var _rulerArray = [rulerArray[0]];
+        for (var i = 1; i < rulerArray.length; i++) {
+            if (_rulerArray[_rulerArray.length - 1] != rulerArray[i]) {
+                _rulerArray.push(rulerArray[i]);
+            }
+        }
+        return _rulerArray;
     }
 
     function _ReadString (express) {
