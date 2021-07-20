@@ -19,6 +19,8 @@ import {
     ReadString
 } from './string';
 
+import Shader from './Shader';
+
 // 导出
 var tool = {
 
@@ -49,7 +51,10 @@ var tool = {
     ruler: ruler,
 
     // 字符串
-    ReadString: ReadString
+    ReadString: ReadString,
+
+    // 着色
+    Shader: Shader
 
 };
 

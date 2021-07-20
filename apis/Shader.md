@@ -1,0 +1,86 @@
+代码着色计算
+======================
+
+```js
+// lang是一个字符串，表示需要着色的语言
+// colors可选，表示使用的色彩
+// 此外，colors具体有多项，都可选，配置你希望修改的即可，其余自动使用默认值
+var shader = Shader(lang[, colors]);
+```
+
+上面的方法获取对于某个特定语言的着色计算实例，接下来使用就很简单了：
+
+```js
+// 获取的codeArray就是最终结果
+var codeArray = shader('代码');
+```
+
+举个例子，比如对于下面的css代码：
+
+```css
+div{
+    color:red;
+}
+```
+
+结果如下：
+
+```js
+[   // 最外层是一个数组，里面的元素表示一行行代码
+    [   // 比如这里的第一行代码，解析出来 ```div``` 和 ```{``` ，分别使用不同颜色表示
+        {color: "#1e50b3", content: "div"},
+        {color: "#ffffff", content: "{"}
+    ],
+    [{…}, {…}, {…}, {…}, {…}],
+    [{…}, {…}]
+]
+```
+
+下面来列举出所有可选的语言：
+
+- html
+
+```js
+Shader('html',{
+    "text": "#000000",/*文本颜色*/
+    "annotation": "#6a9955",/*注释颜色*/
+    "insign": "#ffffff",/*符号颜色*/
+    "node": "#1e50b3",/*结点颜色*/
+    "attrKey": "#1e83b1",/*属性名称颜色*/
+    "attrValue": "#ac4c1e",/*属性值颜色*/
+    "css":{
+        // 查看后续css语言部分
+    },
+    "javascript":{
+        // 查看后续javascript语言部分
+    }
+});
+```
+
+- css
+
+```js
+Shader('css',{
+    "annotation": "#6a9955",/*注释颜色*/
+    "insign": "#ffffff",/*符号颜色*/
+    "selector": "#1e50b3",/*选择器*/
+    "attrKey": "#1e83b1",/*属性名称颜色*/
+    "attrValue": "#ac4c1e"/*属性值颜色*/
+});
+```
+
+- javascript
+
+```js
+Shader('javascript',{
+    "text": "#000000",/*文本颜色*/
+    "annotation": "#6a9955",/*注释颜色*/
+    "insign": "#ffffff",/*符号颜色*/
+    "key": "#ff0000",/*关键字颜色*/
+    "string": "#ac4c1e",/*字符串颜色*/
+    "funName": "#1e50b3",/*函数名称颜色*/
+    "execName": "#1e83b1"/*执行方法颜色*/
+});
+```
+
+[<< 返回首页](../README.md)

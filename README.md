@@ -100,6 +100,14 @@ import {
 
 [<< 查看文档](./apis/string.md)
 
+- 代码着色计算
+
+```js
+import Shader from '@hai2007/tool/Shader.js';
+```
+
+[<< 查看文档](./apis/Shader.md)
+
 ## Special attention
 
 如果你希望一下子引入全部方法，可以有如下方式引入：

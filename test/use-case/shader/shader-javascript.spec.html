@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用例测试 | tool.js / shader.js</title>
+    <script src="../../../dist/tool.js"></script>
+</head>
+
+<body>
+
+    <pre>
+
+        function(arg){
+            console.log(arg);
+            return;
+        }
+
+    </pre>
+
+    <script>
+
+        console.log(tool.Shader('javascript')((document.getElementsByTagName('pre')[0].innerHTML+"").trim()));
+
+    </script>
+
+</body>
+
+</html>
