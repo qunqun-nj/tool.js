@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/hai2007/tool.js/issues"
   },
-  "homepage": "https://github.com/hai2007/tool.js#readme",
+  "homepage": "https://hai2007.github.io/tool.js",
   "devDependencies": {
     "@hai2007/nodejs": "^1.0.0",
     "rollup": "^1.17.0",

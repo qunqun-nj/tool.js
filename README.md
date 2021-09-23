@@ -1,3 +1,9 @@
+<p align='center'>
+    <a href='https://hai2007.github.io/tool.js' target='_blank'>
+        <img src='./logo.png'>
+    </a>
+</p>
+
 # 💡 tool.js - 前端常用的工具类方法汇总
 
 <p>
@@ -15,118 +21,8 @@
 使用的时候遇到任何问题或有好的建议，请点击进入[issue](https://github.com/hai2007/tool.js/issues)，欢迎参与维护！
 
 ## How to use?
-首先你需要通过命令行安装：
 
-```bash
-npm install --save @hai2007/tool
-```
-
-安装好了以后，然后引入你需要的工具：
-
-- 动画轮播
-
-```js
-import animation from '@hai2007/tool/animation.js';
-```
-
-[<< 查看文档](./apis/animation.md)
-
-- 列主序存储的4x4矩阵
-
-```js
-import Matrix4 from '@hai2007/tool/Matrix4.js';
-```
-
-[<< 查看文档](./apis/Matrix4.md)
-
-- Hermite三次插值
-
-```js
-import Hermite from '@hai2007/tool/Hermite.js';
-```
-
-[<< 查看文档](./apis/Hermite.md)
-
-- 获取值的类型
-
-```js
-import getType from '@hai2007/tool/getType.js';
-```
-
-[<< 查看文档](./apis/getType.md)
-
-- 值类型判断方法
-
-```js
-import {
-    isObject,
-    isUndefined, isNull, isBoolean, isNumber, isString, isSymbol,
-    isFunction, isArray, isError, isPlainObject,
-    isElement, isAttribute, isText, isComment
-} from '@hai2007/tool/type.js';
-```
-
-- 提供常用的DOM操作方法
-
-```js
-import xhtml from '@hai2007/tool/xhtml.js';
-```
-
-[<< 查看文档](./apis/xhtml.md)
-
-- 获取键盘此时按下的键的组合结果
-
-```js
-import getKeyString from '@hai2007/tool/getKeyString.js';
-```
-
-[<< 查看文档](./apis/getKeyString.md)
-
-- 刻度尺刻度求解
-
-```js
-import ruler from '@hai2007/tool/ruler.js';
-```
-
-[<< 查看文档](./apis/ruler.md)
-
-- 字符串操作
-
-```js
-import {
-    ReadString
-} from '@hai2007/tool/string.js';
-```
-
-[<< 查看文档](./apis/string.md)
-
-- 代码着色计算
-
-```js
-import Shader from '@hai2007/tool/Shader.js';
-```
-
-[<< 查看文档](./apis/Shader.md)
-
-## Special attention
-
-如果你希望一下子引入全部方法，可以有如下方式引入：
-
-```js
-import tool from '@hai2007/tool';
-```
-
-或
-
-```html
-<script src='https://cdn.jsdelivr.net/npm/@hai2007/tool@0'></script>
-```
-
-如果是node.js环境，请使用这种方式引入：
-
-```js
-const tool = require('@hai2007/tool');
-```
+具体的使用你可以[查阅文档](https://hai2007.github.io/tool.js)哦~
 
 开源协议
 ---------------------------------------

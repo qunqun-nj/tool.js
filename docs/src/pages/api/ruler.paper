@@ -1,0 +1,15 @@
+<template class='doc-view'>
+    <header id='fixed-top'>
+        刻度尺刻度求解
+    </header>
+    <pre q-code>
+        import ruler from '@hai2007/tool/ruler.js';
+    </pre>
+    <pre q-code>
+// 需要注意的是，实际的间距个数可能是 num-1 或 num 或 num+1 或 1
+var rulerArray = ruler(maxValue, minValue, num);
+    </pre>
+    <p>
+        返回的是一个数组，记录着一个个刻度值。
+    </p>
+</template>

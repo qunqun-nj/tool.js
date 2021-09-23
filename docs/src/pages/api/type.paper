@@ -1,0 +1,22 @@
+<template class='doc-view'>
+    <header id='fixed-top'>
+        值类型判断
+    </header>
+    <pre q-code>
+import {
+    isObject,
+    isUndefined, isNull, isBoolean, isNumber, isString, isSymbol,
+    isFunction, isArray, isError, isPlainObject,
+    isElement, isAttribute, isText, isComment
+} from '@hai2007/tool/type.js';
+    </pre>
+    <p>
+        上面的每个方法就是一种判断，比如：
+    </p>
+    <pre q-code>
+        var flag = isArray(data);
+    </pre>
+    <p>
+        返回的值flag是一个boolean类型，表示data是不是一个数组，其余的类似。
+    </p>
+</template>
