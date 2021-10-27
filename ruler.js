@@ -60,7 +60,9 @@ export default function (maxValue, minValue, num) {
 
 
     // 求解出 -100 ~ 100 的最佳间距值 后直接转换原来的倍数
-    var distance = Math.ceil((maxValue - minValue) * times100 / num) / times100;
+    var distance = +(Math.ceil((maxValue - minValue) * times100 / num) / times100).toFixed(dotNum);
+
+    if (distance <= 0) return [minValue, maxValue];
 
     // 最小值，也就是起点
     var begin = Math.floor(minValue / distance) * distance;

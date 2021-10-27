@@ -4,12 +4,12 @@
  *
  * author 你好2007 < https://hai2007.gitee.io/sweethome >
  *
- * version 0.9.1
+ * version 0.9.2
  *
  * Copyright (c) 2020-present hai2007 走一步，再走一步。
  * Released under the MIT license
  *
- * Date:Thu Sep 23 2021 15:02:56 GMT+0800 (中国标准时间)
+ * Date:Wed Oct 27 2021 13:59:39 GMT+0800 (中国标准时间)
  */
 (function () {
     'use strict';
@@ -1067,7 +1067,9 @@
 
 
         // 求解出 -100 ~ 100 的最佳间距值 后直接转换原来的倍数
-        var distance = Math.ceil((maxValue - minValue) * times100 / num) / times100;
+        var distance = +(Math.ceil((maxValue - minValue) * times100 / num) / times100).toFixed(dotNum);
+
+        if (distance <= 0) return [minValue, maxValue];
 
         // 最小值，也就是起点
         var begin = Math.floor(minValue / distance) * distance;
