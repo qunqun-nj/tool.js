@@ -4,12 +4,12 @@
  *
  * author 你好2007 < https://hai2007.gitee.io/sweethome >
  *
- * version 0.9.2
+ * version 0.9.3
  *
  * Copyright (c) 2020-present hai2007 走一步，再走一步。
  * Released under the MIT license
  *
- * Date:Wed Oct 27 2021 13:59:39 GMT+0800 (中国标准时间)
+ * Date:Fri Nov 05 2021 10:17:44 GMT+0800 (中国标准时间)
  */
 (function () {
     'use strict';
@@ -599,6 +599,18 @@
             types.indexOf(value.nodeType) > -1 &&
             !_isPlainObject(value);
     };
+
+    /*!
+     * 💡 - 值类型判断方法
+     * https://github.com/hai2007/tool.js/blob/master/type.js
+     *
+     * author hai2007 < https://hai2007.gitee.io/sweethome >
+     *
+     * Copyright (c) 2020-present hai2007 走一步，再走一步。
+     * Released under the MIT license
+     */
+
+    var isObject = _isObject;
 
     // 基本类型
     var isUndefined = function (input) { return input === undefined };
@@ -1808,7 +1820,7 @@
 
         // 类型判断
         isUndefined: isUndefined, isNull: isNull, isBoolean: isBoolean, isNumber: isNumber, isString: isString, isSymbol: isSymbol,
-        isFunction: isFunction, isArray: isArray, isError: isError, isPlainObject: isPlainObject,
+        isFunction: isFunction, isArray: isArray, isError: isError, isPlainObject: isPlainObject, isObject: isObject,
         isElement: isElement, isAttribute: isAttribute, isText: isText, isComment: isComment,
 
         // DOM操作

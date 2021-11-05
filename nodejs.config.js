@@ -10,7 +10,7 @@ module.exports = {
     pkg: '.',
 
     // 定义任务
-    task(hai2007_nodejs, pkg, rootPath) {
+    task(nodejs, pkg, rootPath) {
 
         [
             'tool.js',

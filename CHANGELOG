@@ -81,3 +81,7 @@ v0.9.2:
     date:2021-10-27
     chagnes:
       -  优化 “刻度尺刻度求解“ ruler.js 刻度不均分的问题： https://github.com/hai2007/tool.js/issues/2
+v0.9.3:
+    date:2021-11-05
+    chagnes:
+      -  修复打包对于类型的判断缺失 ```isObject``` 方法的问题

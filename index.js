@@ -5,7 +5,7 @@ import getType from './getType';
 
 import {
     isUndefined, isNull, isBoolean, isNumber, isString, isSymbol,
-    isFunction, isArray, isError, isPlainObject,
+    isFunction, isArray, isError, isPlainObject, isObject,
     isElement, isAttribute, isText, isComment
 } from './type';
 
@@ -38,7 +38,7 @@ var tool = {
 
     // 类型判断
     isUndefined: isUndefined, isNull: isNull, isBoolean: isBoolean, isNumber: isNumber, isString: isString, isSymbol: isSymbol,
-    isFunction: isFunction, isArray: isArray, isError: isError, isPlainObject: isPlainObject,
+    isFunction: isFunction, isArray: isArray, isError: isError, isPlainObject: isPlainObject, isObject: isObject,
     isElement: isElement, isAttribute: isAttribute, isText: isText, isComment: isComment,
 
     // DOM操作
