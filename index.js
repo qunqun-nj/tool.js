@@ -9,10 +9,6 @@ import {
     isElement, isAttribute, isText, isComment
 } from './type';
 
-import xhtml from './xhtml';
-
-import getKeyString from './getKeyString';
-
 import ruler from './ruler';
 
 import {
@@ -40,12 +36,6 @@ var tool = {
     isUndefined: isUndefined, isNull: isNull, isBoolean: isBoolean, isNumber: isNumber, isString: isString, isSymbol: isSymbol,
     isFunction: isFunction, isArray: isArray, isError: isError, isPlainObject: isPlainObject, isObject: isObject,
     isElement: isElement, isAttribute: isAttribute, isText: isText, isComment: isComment,
-
-    // DOM操作
-    xhtml: xhtml,
-
-    // 键盘按键
-    getKeyString: getKeyString,
 
     // 刻度
     ruler: ruler,

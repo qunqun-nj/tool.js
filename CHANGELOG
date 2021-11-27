@@ -85,3 +85,8 @@ v0.9.3:
     date:2021-11-05
     chagnes:
       -  修复打包对于类型的判断缺失 ```isObject``` 方法的问题
+v1.0.0:
+    date:2021-11-27
+    chagnes:
+      -  xhtml和getKeyString迁移到新的项目中： https://hai2007.github.io/browser.js
+         （本项目后续专注提供跨平台的js基础工具）

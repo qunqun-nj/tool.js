@@ -19,7 +19,7 @@
             或
         </p>
         <pre q-code:html>
-            <script src='https://cdn.jsdelivr.net/npm/@hai2007/tool@0'></script>
+            <script src='https://cdn.jsdelivr.net/npm/@hai2007/tool@1'></script>
         </pre>
         <p>
             如果是node.js环境，请使用这种方式引入：

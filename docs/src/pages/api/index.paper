@@ -25,16 +25,6 @@
                 <h3 @click='openPage("type","top","no")'>值类型判断</h3>
             </li>
         </ul>
-        <ul :active='pagename=="xhtml"?"yes":"no"'>
-            <li>
-                <h3 @click='openPage("xhtml","top","no")'>常用的DOM操作</h3>
-            </li>
-        </ul>
-        <ul :active='pagename=="getKeyString"?"yes":"no"'>
-            <li>
-                <h3 @click='openPage("getKeyString","top","no")'>键盘按下的键的组合结果</h3>
-            </li>
-        </ul>
         <ul :active='pagename=="ruler"?"yes":"no"'>
             <li>
                 <h3 @click='openPage("ruler","top","no")'>刻度尺刻度求解</h3>
@@ -66,8 +56,6 @@
         Hermite: () => import('./Hermite.paper'),
         getType: () => import('./getType.paper'),
         type: () => import('./type.paper'),
-        xhtml: () => import('./xhtml.paper'),
-        getKeyString: () => import('./getKeyString.paper'),
         ruler: () => import('./ruler.paper'),
         string: () => import('./string.paper'),
         Shader: () => import('./Shader.paper')
