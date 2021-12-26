@@ -8,6 +8,18 @@
         <ul :active='pagename=="Matrix4"?"yes":"no"'>
             <li>
                 <h3 @click='openPage("Matrix4","top","no")'>列主序存储的4x4矩阵</h3>
+                <ul>
+                    <li>
+                        <h4 @click='doScroll("matrix4-basic")'>
+                            基本运算
+                        </h4>
+                    </li>
+                    <li>
+                        <h4 @click='doScroll("matrix4-calc")'>
+                            坐标变换
+                        </h4>
+                    </li>
+                </ul>
             </li>
         </ul>
         <ul :active='pagename=="Hermite"?"yes":"no"'>
@@ -33,13 +45,52 @@
         <ul :active='pagename=="string"?"yes":"no"'>
             <li>
                 <h3 @click='openPage("string","top","no")'>字符串操作</h3>
+                <ul>
+                    <li>
+                        <h4 @click='doScroll("ReadString")'>
+                            字符串分析
+                        </h4>
+                    </li>
+                </ul>
             </li>
         </ul>
         <ul :active='pagename=="Shader"?"yes":"no"'>
             <li>
                 <h3 @click='openPage("Shader","top","no")'>代码着色计算</h3>
+                <ul>
+                    <li>
+                        <h4 @click='doScroll("Shader-html")'>
+                            html
+                        </h4>
+                    </li>
+                    <li>
+                        <h4 @click='doScroll("Shader-css")'>
+                            css
+                        </h4>
+                    </li>
+                    <li>
+                        <h4 @click='doScroll("Shader-js")'>
+                            javascript
+                        </h4>
+                    </li>
+                </ul>
             </li>
         </ul>
+        <ul :active='pagename=="date"?"yes":"no"'>
+            <li>
+                <h3 @click='openPage("date","top","no")'>日期相关辅助计算</h3>
+                <ul>
+                    <li>
+                        <h4 @click='doScroll("calcDays")'>
+                            calcDays
+                        </h4>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <a class='need-help' href='https://github.com/hai2007/tool.js/issues' target="_blank">
+            不够用？点击此处告诉我们
+        </a>
     </div>
     <div id='root-view' class='view'>
         <div>
@@ -58,7 +109,8 @@
         type: () => import('./type.paper'),
         ruler: () => import('./ruler.paper'),
         string: () => import('./string.paper'),
-        Shader: () => import('./Shader.paper')
+        Shader: () => import('./Shader.paper'),
+        date: () => import('./date.paper')
     };
 
     export default {
@@ -70,7 +122,7 @@
         },
         mounted() {
             let urlJson = this.urlFormat(window.location.href);
-            this.openPage(urlJson.router[1] in pages ? urlJson.router[1] : "animation", urlJson.params.fixed || "top");
+            this.openPage(urlJson.router[1] in pages ? urlJson.router[1] : "Matrix4", urlJson.params.fixed || "top");
         },
         methods: {
             openPage(pagename, fixedName, flag) {
@@ -88,3 +140,21 @@
         }
     };
 </script>
+<style>
+    .need-help {
+        background-color: #799d41;
+        color: white;
+        text-align: center;
+        margin: 5px;
+        margin-top: 20px;
+        cursor: pointer;
+        font-size: 12px;
+        display: block;
+        padding: 10px 0;
+        border-radius: 7px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+</style>

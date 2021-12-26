@@ -42,7 +42,7 @@ div{
     <p>
         下面来列举出所有可选的语言：
     </p>
-    <h2>
+    <h2 id='fixed-Shader-html'>
         html
     </h2>
     <pre q-code>
@@ -61,7 +61,7 @@ Shader('html',{
     }
 });
     </pre>
-    <h2>
+    <h2 id='fixed-Shader-css'>
         css
     </h2>
     <pre q-code>
@@ -73,7 +73,7 @@ Shader('css',{
     "attrValue": "#ac4c1e"/*属性值颜色*/
 });
     </pre>
-    <h2>
+    <h2 id='fixed-Shader-js'>
         javascript
     </h2>
     <pre q-code>

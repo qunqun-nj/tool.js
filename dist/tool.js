@@ -4,12 +4,12 @@
  *
  * author 你好2007 < https://hai2007.gitee.io/sweethome >
  *
- * version 1.0.0
+ * version 1.1.0
  *
  * Copyright (c) 2020-present hai2007 走一步，再走一步。
  * Released under the MIT license
  *
- * Date:Sat Nov 27 2021 13:25:15 GMT+0800 (GMT+08:00)
+ * Date:Sun Dec 26 2021 11:20:50 GMT+0800 (GMT+08:00)
  */
 (function () {
     'use strict';
@@ -1418,6 +1418,33 @@
 
     }
 
+    /*!
+     * 💡 - 日期相关辅助计算
+     * https://github.com/hai2007/tool.js/blob/master/date.js
+     *
+     * author hai2007 < https://hai2007.gitee.io/sweethome >
+     *
+     * Copyright (c) 2021-present hai2007 走一步，再走一步。
+     * Released under the MIT license
+     */
+
+    // 计算某月多少天
+    var calcDays = function (year, month) {
+
+        if (month == 2) {
+
+            if ((year % 4 != 0) || (year % 100 == 0 && year % 400 != 0)) {
+                return 28;
+            } else {
+                return 29;
+            }
+
+        } else {
+            return [31, -1, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][month - 1];
+        }
+
+    };
+
     // 导出
     var tool = {
 
@@ -1445,7 +1472,10 @@
         ReadString: ReadString,
 
         // 着色
-        Shader: Shader
+        Shader: Shader,
+
+        // 日期
+        calcDays: calcDays
 
     };
 

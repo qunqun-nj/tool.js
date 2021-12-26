@@ -1,0 +1,14 @@
+<template class='doc-view'>
+    <header id='fixed-top'>
+        日期相关辅助计算
+    </header>
+    <pre q-code>
+        import {calcDays} from '@hai2007/tool/date.js';
+    </pre>
+    <h2 id='fixed-calcDays'>
+        计算某月多少天
+    </h2>
+    <pre q-code>
+        var days=calcDays(year,month);
+    </pre>
+</template>

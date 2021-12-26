@@ -2,18 +2,18 @@
 /*************************** [bundle] ****************************/
 // Original file:./src/pages/begin/index.paper
 /*****************************************************************/
-window.__etcpack__bundleSrc__['24']=function(){
+window.__etcpack__bundleSrc__['23']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     
 
     // 导入js
-__etcpack__scope_args__=window.__etcpack__getBundle('31');
+__etcpack__scope_args__=window.__etcpack__getBundle('29');
 var script =__etcpack__scope_args__.default;
 
 
     // 导入css
-__etcpack__scope_args__=window.__etcpack__getBundle('32');
+__etcpack__scope_args__=window.__etcpack__getBundle('30');
 
 
     script.render=function(createElement){
@@ -31,7 +31,7 @@ __etcpack__scope_args__=window.__etcpack__getBundle('32');
 /*************************** [bundle] ****************************/
 // Original file:./src/pages/begin/index.paper?QuickPaper&type=script&lang=js&hash=b6ec1c8a
 /*****************************************************************/
-window.__etcpack__bundleSrc__['31']=function(){
+window.__etcpack__bundleSrc__['29']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= {};
@@ -42,7 +42,7 @@ window.__etcpack__bundleSrc__['31']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/pages/begin/index.paper?QuickPaper&type=style&lang=css&hash=b6ec1c8a
 /*****************************************************************/
-window.__etcpack__bundleSrc__['32']=function(){
+window.__etcpack__bundleSrc__['30']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var styleElement = document.createElement('style');

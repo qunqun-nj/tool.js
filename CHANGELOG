@@ -90,3 +90,7 @@ v1.0.0:
     chagnes:
       -  xhtml和getKeyString迁移到新的项目中： https://hai2007.github.io/browser.js
          （本项目后续专注提供跨平台的js基础工具）
+v1.1.0:
+    date:2021-12-26
+    chagnes:
+      -  添加 “日期相关辅助计算“ date.js

@@ -2,23 +2,23 @@
 /*************************** [bundle] ****************************/
 // Original file:./src/pages/api/index.paper
 /*****************************************************************/
-window.__etcpack__bundleSrc__['25']=function(){
+window.__etcpack__bundleSrc__['24']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     
 
     // 导入js
-__etcpack__scope_args__=window.__etcpack__getBundle('33');
+__etcpack__scope_args__=window.__etcpack__getBundle('31');
 var script =__etcpack__scope_args__.default;
 
 
     // 导入css
-__etcpack__scope_args__=window.__etcpack__getBundle('44');
+__etcpack__scope_args__=window.__etcpack__getBundle('43');
 
 
     script.render=function(createElement){
 
-        return createElement('div',{"class":"nav-view","quickpaper":"","data-quickpaper-aa5c6c28":""},[createElement('div',{"class":"menu","data-quickpaper-aa5c6c28":""},[createElement('ul',{":active":"pagename==\"animation\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"animation\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["动画轮播"])])]),createElement('ul',{":active":"pagename==\"Matrix4\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"Matrix4\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["列主序存储的4x4矩阵"])])]),createElement('ul',{":active":"pagename==\"Hermite\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"Hermite\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["Hermite三次插值"])])]),createElement('ul',{":active":"pagename==\"getType\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"getType\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["获取值的类型"])])]),createElement('ul',{":active":"pagename==\"type\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"type\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["值类型判断"])])]),createElement('ul',{":active":"pagename==\"ruler\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"ruler\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["刻度尺刻度求解"])])]),createElement('ul',{":active":"pagename==\"string\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"string\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["字符串操作"])])]),createElement('ul',{":active":"pagename==\"Shader\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"Shader\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["代码着色计算"])])])]),createElement('div',{"id":"root-view","class":"view","data-quickpaper-aa5c6c28":""},[createElement('div',{"data-quickpaper-aa5c6c28":""},[createElement('component',{":is":"page","data-quickpaper-aa5c6c28":""},[])])])])
+        return createElement('div',{"class":"nav-view","quickpaper":"","data-quickpaper-aa5c6c28":""},[createElement('div',{"class":"menu","data-quickpaper-aa5c6c28":""},[createElement('ul',{":active":"pagename==\"animation\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"animation\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["动画轮播"])])]),createElement('ul',{":active":"pagename==\"Matrix4\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"Matrix4\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["列主序存储的4x4矩阵"]),createElement('ul',{"data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h4',{"@click":"doScroll(\"matrix4-basic\")","data-quickpaper-aa5c6c28":""},["基本运算"])]),createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h4',{"@click":"doScroll(\"matrix4-calc\")","data-quickpaper-aa5c6c28":""},["坐标变换"])])])])]),createElement('ul',{":active":"pagename==\"Hermite\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"Hermite\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["Hermite三次插值"])])]),createElement('ul',{":active":"pagename==\"getType\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"getType\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["获取值的类型"])])]),createElement('ul',{":active":"pagename==\"type\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"type\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["值类型判断"])])]),createElement('ul',{":active":"pagename==\"ruler\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"ruler\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["刻度尺刻度求解"])])]),createElement('ul',{":active":"pagename==\"string\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"string\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["字符串操作"]),createElement('ul',{"data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h4',{"@click":"doScroll(\"ReadString\")","data-quickpaper-aa5c6c28":""},["字符串分析"])])])])]),createElement('ul',{":active":"pagename==\"Shader\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"Shader\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["代码着色计算"]),createElement('ul',{"data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h4',{"@click":"doScroll(\"Shader-html\")","data-quickpaper-aa5c6c28":""},["html"])]),createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h4',{"@click":"doScroll(\"Shader-css\")","data-quickpaper-aa5c6c28":""},["css"])]),createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h4',{"@click":"doScroll(\"Shader-js\")","data-quickpaper-aa5c6c28":""},["javascript"])])])])]),createElement('ul',{":active":"pagename==\"date\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"date\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["日期相关辅助计算"]),createElement('ul',{"data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h4',{"@click":"doScroll(\"calcDays\")","data-quickpaper-aa5c6c28":""},["calcDays"])])])])]),createElement('a',{"class":"need-help","href":"https://github.com/hai2007/tool.js/issues","target":"_blank","data-quickpaper-aa5c6c28":""},["不够用？点击此处告诉我们"])]),createElement('div',{"id":"root-view","class":"view","data-quickpaper-aa5c6c28":""},[createElement('div',{"data-quickpaper-aa5c6c28":""},[createElement('component',{":is":"page","data-quickpaper-aa5c6c28":""},[])])])])
 
     };
 
@@ -31,22 +31,23 @@ __etcpack__scope_args__=window.__etcpack__getBundle('44');
 /*************************** [bundle] ****************************/
 // Original file:./src/pages/api/index.paper?QuickPaper&type=script&lang=js&hash=aa5c6c28
 /*****************************************************************/
-window.__etcpack__bundleSrc__['33']=function(){
+window.__etcpack__bundleSrc__['31']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_args__=window.__etcpack__getBundle('34');
+    __etcpack__scope_args__=window.__etcpack__getBundle('32');
 var fixedScroll =__etcpack__scope_args__.default;
 
 
     let pages = {
-        animation: () => window.__etcpack__getLazyBundle('./build/main@v0.2.0-bundle3.js','36'),
-        Matrix4: () => window.__etcpack__getLazyBundle('./build/main@v0.2.0-bundle4.js','37'),
-        Hermite: () => window.__etcpack__getLazyBundle('./build/main@v0.2.0-bundle5.js','38'),
-        getType: () => window.__etcpack__getLazyBundle('./build/main@v0.2.0-bundle6.js','39'),
-        type: () => window.__etcpack__getLazyBundle('./build/main@v0.2.0-bundle7.js','40'),
-        ruler: () => window.__etcpack__getLazyBundle('./build/main@v0.2.0-bundle8.js','41'),
-        string: () => window.__etcpack__getLazyBundle('./build/main@v0.2.0-bundle9.js','42'),
-        Shader: () => window.__etcpack__getLazyBundle('./build/main@v0.2.0-bundle10.js','43')
+        animation: () => window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle3.js','34'),
+        Matrix4: () => window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle4.js','35'),
+        Hermite: () => window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle5.js','36'),
+        getType: () => window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle6.js','37'),
+        type: () => window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle7.js','38'),
+        ruler: () => window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle8.js','39'),
+        string: () => window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle9.js','40'),
+        Shader: () => window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle10.js','41'),
+        date: () => window.__etcpack__getLazyBundle('./build/main@v0.2.1-bundle11.js','42')
     };
 
     __etcpack__scope_bundle__.default= {
@@ -58,7 +59,7 @@ var fixedScroll =__etcpack__scope_args__.default;
         },
         mounted() {
             let urlJson = this.urlFormat(window.location.href);
-            this.openPage(urlJson.router[1] in pages ? urlJson.router[1] : "animation", urlJson.params.fixed || "top");
+            this.openPage(urlJson.router[1] in pages ? urlJson.router[1] : "Matrix4", urlJson.params.fixed || "top");
         },
         methods: {
             openPage(pagename, fixedName, flag) {
@@ -82,10 +83,10 @@ var fixedScroll =__etcpack__scope_args__.default;
 /*************************** [bundle] ****************************/
 // Original file:./src/Service/fixedScroll.js
 /*****************************************************************/
-window.__etcpack__bundleSrc__['34']=function(){
+window.__etcpack__bundleSrc__['32']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_args__=window.__etcpack__getBundle('35');
+    __etcpack__scope_args__=window.__etcpack__getBundle('33');
 var animation =__etcpack__scope_args__.default;
 
 __etcpack__scope_bundle__.default= function (fixed, overValue) {
@@ -117,7 +118,7 @@ __etcpack__scope_bundle__.default= function (fixed, overValue) {
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/@hai2007/tool/animation.js
 /*****************************************************************/
-window.__etcpack__bundleSrc__['35']=function(){
+window.__etcpack__bundleSrc__['33']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     //当前正在运动的动画的tick函数堆栈
@@ -245,12 +246,12 @@ __etcpack__scope_bundle__.default= function (doback, duration, callback) {
 /*************************** [bundle] ****************************/
 // Original file:./src/pages/api/index.paper?QuickPaper&type=style&lang=css&hash=aa5c6c28
 /*****************************************************************/
-window.__etcpack__bundleSrc__['44']=function(){
+window.__etcpack__bundleSrc__['43']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var styleElement = document.createElement('style');
 var head = document.head || document.getElementsByTagName('head')[0];
-styleElement.innerHTML = "";
+styleElement.innerHTML = "\n .need-help[data-quickpaper-aa5c6c28]{\n\nbackground-color: #799d41;\n\ncolor: white;\n\ntext-align: center;\n\nmargin: 5px;\n\nmargin-top: 20px;\n\ncursor: pointer;\n\nfont-size: 12px;\n\ndisplay: block;\n\npadding: 10px 0;\n\nborder-radius: 7px;\n\n}\n\n .need-help[data-quickpaper-aa5c6c28]:hover{\n\ntext-decoration: underline;\n\n}\n";
 styleElement.setAttribute('type', 'text/css');head.appendChild(styleElement);
   
     return __etcpack__scope_bundle__;

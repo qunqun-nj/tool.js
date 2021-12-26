@@ -2,18 +2,18 @@
 /*************************** [bundle] ****************************/
 // Original file:./src/pages/api/Hermite.paper
 /*****************************************************************/
-window.__etcpack__bundleSrc__['38']=function(){
+window.__etcpack__bundleSrc__['36']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     
 
     // 导入js
-__etcpack__scope_args__=window.__etcpack__getBundle('49');
+__etcpack__scope_args__=window.__etcpack__getBundle('48');
 var script =__etcpack__scope_args__.default;
 
 
     // 导入css
-__etcpack__scope_args__=window.__etcpack__getBundle('50');
+__etcpack__scope_args__=window.__etcpack__getBundle('49');
 
 
     script.render=function(createElement){
@@ -31,7 +31,7 @@ __etcpack__scope_args__=window.__etcpack__getBundle('50');
 /*************************** [bundle] ****************************/
 // Original file:./src/pages/api/Hermite.paper?QuickPaper&type=script&lang=js&hash=1ad3eb9c
 /*****************************************************************/
-window.__etcpack__bundleSrc__['49']=function(){
+window.__etcpack__bundleSrc__['48']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= {};
@@ -42,7 +42,7 @@ window.__etcpack__bundleSrc__['49']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/pages/api/Hermite.paper?QuickPaper&type=style&lang=css&hash=1ad3eb9c
 /*****************************************************************/
-window.__etcpack__bundleSrc__['50']=function(){
+window.__etcpack__bundleSrc__['49']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var styleElement = document.createElement('style');

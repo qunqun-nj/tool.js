@@ -17,6 +17,10 @@ import {
 
 import Shader from './Shader';
 
+import {
+    calcDays
+} from './date';
+
 // 导出
 var tool = {
 
@@ -44,7 +48,10 @@ var tool = {
     ReadString: ReadString,
 
     // 着色
-    Shader: Shader
+    Shader: Shader,
+
+    // 日期
+    calcDays: calcDays
 
 };
 

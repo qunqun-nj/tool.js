@@ -1,6 +1,6 @@
 {
   "name": "docs",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "tool.js文档",
   "scripts": {
     "dev": "etcpack_dev --config etcpack.dev.js",
@@ -10,11 +10,12 @@
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@etcpack/babel-loader": "^0.1.1",
+    "@etcpack/commonjs-plug": "^0.1.0",
     "@etcpack/quickpaper-loader": "^0.2.0",
     "@etcpack/quickpaper-loader-plug": "^0.1.0",
     "@etcpack/quickpaper-style-loader": "^0.1.0",
     "@etcpack/scss-loader": "^0.1.2",
-    "etcpack": "^0.5.1"
+    "etcpack": "^0.5.4"
   },
   "dependencies": {
     "@hai2007/polyfill": "^0.1.1",

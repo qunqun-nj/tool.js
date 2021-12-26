@@ -7,7 +7,7 @@ import {
     ReadString
 } from '@hai2007/tool/string.js';
     </pre>
-    <h2>
+    <h2 id='fixed-ReadString'>
         字符串分析
     </h2>
     <pre q-code>
